@@ -9,13 +9,44 @@ nav {
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.70);
     animation: opacity 2s;
+    @keyframes opacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .logo {
+        width: 50%;
+        float: left;
+        padding: 20px 70px;
+        img{display:inline-block;}
+    }
+    .menu {
+        width: 50%;
+        float: left;
+    }
 }
 
-@keyframes opacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+nav:before,
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media #{$media-minimum} {
+    nav {
+        height: 120px;
+        .logo {
+            width: 100%;
+            clear: both;
+            text-align: center;
+        }
+        .menu {
+            width: 100%;
+            clear: both;
+        }
     }
 }
