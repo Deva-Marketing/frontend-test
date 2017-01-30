@@ -12,6 +12,5 @@ require('fs').readdirSync(tasksPath).forEach(
     }
 );
 
-gulp.task('build', ['html', 'css', 'js', 'static']);
-gulp.task('default', ['build', 'server', 'html-watch', 'css-watch', 'js-watch', 'static-watch']);
-gulp.task('imageoptim', ['imgoptim']);
+gulp.task('build', ['css', 'js']);
+gulp.task('default', ['build', 'server', 'css-watch', 'js-watch']);

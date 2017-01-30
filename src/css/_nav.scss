@@ -1,0 +1,21 @@
+nav {
+    @include container(1308px);
+    left: 0px;
+    right: 0px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.70);
+    animation: opacity 2s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

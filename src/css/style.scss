@@ -1,38 +1,31 @@
-// ++++++++++++++++
-// IMPORT FRAMEWORK
-// ++++++++++++++++
-//@import "foundation/foundation";
-//Put in the parameter (true) to enable flexbox mode.
-//@include foundation-everything();
-
 // +++++++++++++
-// LOCAL IMPORTS
+// UTILITIES
 // +++++++++++++
-@import "functions";
+@import "normalize";
 @import "mixins";
-@import "variables";
-
+// +++++++++++++
+// PARTS
+// +++++++++++++
+@import "header";
+@import "nav";
+@import "section";
 // ++++++++++++++++++
 // GENERIC BODY STYLE
 // ++++++++++++++++++
 body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility !important;
+    font-size: 62.5%;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html {
 
-}
-
-
-body {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
+footer {}
