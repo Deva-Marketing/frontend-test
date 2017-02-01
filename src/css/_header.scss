@@ -36,3 +36,20 @@ header {
         line-height: 2.2em;
     }
 }
+
+
+@media #{$media-minimum} {
+    header{
+            padding: 220px 20px 0 20px;
+        h1{
+            font-size: 4.6em;
+        }
+        p{
+            font-size: 1.4em;
+        }
+        br{
+            display: none;
+        }
+    }
+
+}

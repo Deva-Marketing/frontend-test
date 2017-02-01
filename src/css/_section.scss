@@ -1,10 +1,11 @@
 section {
     @include container(1308px);
-    display: flex;
+    display: block;
+    clear: both;
     .main-text {
         width: 44%;
-        display: inline-block;
         padding: 75px 65px;
+        display: inline-block;
         .verticle-line {
             border-left: 2px solid #da491c;
             height: 46px;
@@ -30,23 +31,150 @@ section {
             margin-bottom: 45px;
         }
         p {
-        	font-family: "Open Sans", serif;
+            font-family: "Open Sans", serif;
             font-size: 14px;
             color: #333333;
             line-height: 1.8em;
-            padding-bottom:25px;
+            padding-bottom: 25px;
         }
     }
     .services {
         width: 56%;
         display: inline-block;
+        float: right;
+        .flex-services {
+            display: flex;
+            .service {
+                flex: 1;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #cccccc;
+                color: 333333;
+                cursor: pointer;
+                padding-top:95px;
+                transition: padding 0.5s ease;
+                position: relative;
+                height: 290px;
+                i {
+                    margin: 0 auto;
+                }
+                p {
+                    padding: 0 20px;
+                }
+                p:nth-child(2) {
+                    margin-top: 35px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                p:nth-child(3) {
+                    margin-top: 20px;
+                    font-size: 13px;
+                    text-align: center;
+                    line-height: 20px;
+                    display: none;
+                    color: #999999;
+                }
+                .more-info {
+                    background-color: #da491c;
+                    background-image: url("../images/more-info.png");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    position: absolute;
+                    bottom: 0px;
+                    width: 100%;
+                    padding: 25px;
+                    text-align: center;
+                    display: none;
+                }
+            }
+            .service:hover {
+                padding-top: 40px;
+                transition: padding 0.5s ease;
+                background-color: #292929;
+            
+
+                p:nth-child(2) {
+                    color: #FFF;
+                    transition: color 0.3s ease;
+                }
+                p:nth-child(3) {
+                    display: block;
+                }
+                .more-info {
+                    display: block;
+                }
+            }
+        }
     }
+}
+
+section::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 
 @media #{$media-small-down} {
     section {
         .main-text {
             padding: 35px 25px;
+            width: 100%;
+        }
+        .services {
+            width: 100%;
+            display: block;
+            .flex-services {
+                display: block;
+                .service {
+                    display: block;
+                    margin: 0 auto;
+                    width: 80%;
+                }
+            }
         }
     }
+}
+
+.sprite-services {
+    background-image: url(../images/spritesheet-services.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-copywriting {
+    width: 37px;
+    height: 37px;
+    background-position: -5px -5px;
+}
+
+.sprite-development {
+    width: 37px;
+    height: 37px;
+    background-position: -52px -5px;
+}
+
+.sprite-photography {
+    width: 37px;
+    height: 37px;
+    background-position: -5px -52px;
+}
+
+.sprite-social {
+    width: 37px;
+    height: 37px;
+    background-position: -52px -52px;
+}
+
+.sprite-sys-arch {
+    width: 37px;
+    height: 37px;
+    background-position: -99px -5px;
+}
+
+.sprite-ui {
+    width: 37px;
+    height: 37px;
+    background-position: -99px -52px;
 }
