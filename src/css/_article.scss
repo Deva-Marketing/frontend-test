@@ -1,0 +1,48 @@
+article {
+    @include container(1308px);
+    position:relative;
+    z-index: -1;
+    height: 523px;
+    background-image: url('../images/parralax-section.jpg');
+    background-repeat: no-repeat;
+    padding: 120px 70px 0px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .paralax-text-article{
+        margin-top: 60px;
+    }
+    .headline {
+        font-size: 2.6em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+    hr{
+        margin: 20px 0;
+        width: 8.5em;
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 2px solid $primary-color;
+    }
+    h3{
+        font-size: 5.5em;
+        line-height: 0.9em;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    .iphone{
+        position:absolute;
+        z-index: 4;
+        right:360px;
+        top:185px;
+    }
+    .ipad{
+        position:absolute;
+        z-index: 3;
+        right:60px;
+        top:65px;
+    }
+}

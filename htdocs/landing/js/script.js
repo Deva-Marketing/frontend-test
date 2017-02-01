@@ -32,9 +32,7 @@ $(window).scroll(function () {
     var scrollTop, height;
     scrollTop = $(window).scrollTop();
     height = 400;
-    $('.header-container').css({
-        'opacity': ((height - scrollTop) / height)
-    });
+    $('.header-container').css({'opacity': ((height - scrollTop) / height)});
 });
 },{"jquery":2}],2:[function(require,module,exports){
 /*!
