@@ -1,0 +1,34 @@
+.buttons{
+    margin-top: 50px;
+
+}
+
+.button {
+    appearance: none;
+    background: #323232;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 20px;
+    width: 210px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin: 0 10px 0 0;
+    position: relative;
+    &:hover{
+       background: #da491c; 
+    }
+}
+
+@media #{$media-minimum} {
+    .button{
+        margin-bottom: 10px;
+    }
+}

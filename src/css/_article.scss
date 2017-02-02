@@ -1,7 +1,7 @@
 article {
     @include container(1308px);
-    position:relative;
-    z-index: -1;
+    position: relative;
+    z-index: 0;
     height: 523px;
     background-image: url('../images/parralax-section.jpg');
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@ article {
     position: relative;
     width: 100%;
     overflow: hidden;
-    .paralax-text-article{
+    .paralax-text-article {
         margin-top: 60px;
     }
     .headline {
@@ -17,7 +17,10 @@ article {
         color: #FFFFFF;
         text-transform: uppercase;
     }
-    hr{
+    .hidden-mid{
+        display: none;
+    }
+    hr {
         margin: 20px 0;
         width: 8.5em;
         display: block;
@@ -25,24 +28,70 @@ article {
         border: 0;
         border-top: 2px solid $primary-color;
     }
-    h3{
+    h3 {
         font-size: 5.5em;
         line-height: 0.9em;
         color: #FFFFFF;
         text-transform: uppercase;
         font-weight: 600;
     }
-
-    .iphone{
-        position:absolute;
+    .iphone {
+        position: absolute;
         z-index: 4;
-        right:360px;
-        top:185px;
+        right: 360px;
+        top: 185px;
     }
-    .ipad{
-        position:absolute;
+    .ipad {
+        position: absolute;
         z-index: 3;
-        right:60px;
-        top:65px;
+        right: 60px;
+        top: 65px;
     }
+}
+
+@media #{$media-small-down} {
+    article {
+        .iphone {
+            display: none;
+        }
+        .ipad {
+            display: none;
+        }
+    }
+}
+
+@media #{$media-minimum} {
+    article {
+        text-align: center;
+        hr {display:inline-block;}
+        h3 {
+            font-size: 2.7em;
+        }
+        .headline {
+            font-size: 2em
+        }
+        .iphone {
+            display: none;
+        }
+        .ipad {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1220px) {
+     article {
+    .hidden-mid{
+        display: inline;
+    }
+    .iphone {
+        z-index: 4;
+        right: 240px;
+        top: 185px;
+    }
+    .ipad {
+        right: 20px;
+        top: 65px;
+    }
+}
 }
