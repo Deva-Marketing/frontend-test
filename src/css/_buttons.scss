@@ -1,6 +1,5 @@
 .buttons{
     margin-top: 50px;
-
 }
 
 .button {
@@ -19,11 +18,12 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
+    transition: all 0.3s ease;
     margin: 0 10px 0 0;
     position: relative;
     &:hover{
        background: #da491c; 
+       transition: all 0.3s ease;
     }
 }
 

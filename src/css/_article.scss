@@ -62,13 +62,13 @@ article {
 
 @media #{$media-minimum} {
     article {
-        text-align: center;
+        
         hr {display:inline-block;}
         h3 {
-            font-size: 2.7em;
+            font-size: 2.8em;
         }
         .headline {
-            font-size: 2em
+            font-size: 2.4em
         }
         .iphone {
             display: none;

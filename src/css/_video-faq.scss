@@ -2,6 +2,9 @@
     @include container(1308px);
     position: relative;
     clear: both;
+    ::selection{
+        background-color: #c0c0c0;
+    }
     .video {
         width: 56.5%;
         display: inline-block;
@@ -34,10 +37,17 @@
         .question {
             font-size: 1.6em;
             color: #da491c;
+            display: inline-block;
+            margin-left: 5px;
+           
+        }
+        .ver-align{
+            padding: 50px 0;
         }
         hr {
             width: 100%;
             display: block;
+            margin: 10px 0;
             height: 1px;
             border: 0;
             border-top: 2px solid #cfcfcf;
@@ -45,6 +55,12 @@
         .answer {
             font-size: 1.4em;
             color: #666666;
+            display: none;
+        }
+        img{
+            vertical-align:middle;
+            margin-top: -5px;
+            @media screen and (max-width: 1220px) {display:none;}
         }
     }
 }
@@ -61,3 +77,4 @@
         }
     }
 }
+

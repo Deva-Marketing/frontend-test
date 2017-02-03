@@ -15,6 +15,8 @@
 @import "footer";
 @import "buttons";
 @import "video-faq";
+@import "testimonials";
+@import "achivments";
 // ++++++++++++++++++
 // IMPORTED GOOGLE FONTS
 // ++++++++++++++++++
@@ -40,12 +42,13 @@ body {
     margin: 0;
     padding: 0;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 ::selection {
-  background: #da491c; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-  background: #da491c; /* Gecko Browsers */
+  background: #da491c; 
 }
 
 // ++++++++++++++++++
@@ -97,9 +100,9 @@ body {
 
 
 .sprite-rest {
-    background-image: url(spritesheet.png);
+    background-image: url(../images/spritesheet-rest.png);
     background-repeat: no-repeat;
-    display: block;
+    display: inline-block;
 }
 
 .sprite-bugsfixed {

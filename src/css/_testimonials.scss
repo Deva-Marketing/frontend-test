@@ -1,0 +1,40 @@
+.testimonials {
+    @include container(1308px);
+    padding: 80px 20px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    background-color: #f0eeee;
+    min-height: 460px;
+    img {
+        display: inline-block;
+    }
+    li {
+        display: none;
+    }
+    ul {
+        list-style: none;
+    }
+    p.writen-testa {
+        font-family: 'Merriweather', serif;
+        font-weight: 100;
+        font-size: 1.8em;
+        line-height: 2em;
+        max-width: 750px;
+        margin: 0 auto;
+        color: #333333;
+        margin-bottom: 35px;
+        min-height:73px;
+        @media #{$media-minimum} {min-height:150px;}
+    }
+    p.author {
+        color: #666666;
+        font-size: 1.4em;
+        margin-top: 35px;
+    }
+    .testa-up-down{
+    	margin-top: 35px;
+        img{cursor:pointer;}
+    	img:hover{opacity:0.7}
+    }
+}
