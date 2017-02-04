@@ -17,11 +17,11 @@ module.exports = function (gulp) {
                 .pipe(jslint())
                 .pipe(plumber.stop()),
 
-            browserified = gulp.src('js/*.js')
+            browserified = gulp.src('js/*.js,')
                 .pipe(plumber({ errorHandler: errorHandler }))
                 .pipe(browser.browserify())
                 .pipe(sourcemaps.init())
-//                .pipe(uglify())
+                .pipe(uglify())
                 .pipe(sourcemaps.write('./'))
                 .pipe(plumber.stop())
                 .pipe(gulp.dest('../htdocs/landing/js/'));
