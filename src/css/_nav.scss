@@ -3,30 +3,97 @@ nav {
     left: 0px;
     right: 0px;
     top: 0;
-    z-index: 999;
+    z-index: 99;
     position: fixed;
     width: 100%;
-    height: 60px;
     color: #FFFFFF;
     background-color: rgba(0, 0, 0, 0.70);
-    animation: opacity 2s;
-    @keyframes opacity {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
     .logo {
-        width: 50%;
+        width: 30%;
         float: left;
         padding: 20px 70px;
-        img{display:inline-block;}
+        img {
+            display: inline-block;
+        }
+    }
+    @media #{$media-small-up} {
+        #menu {
+            display: block!important;
+        }
     }
     .menu {
-        width: 50%;
+        width: 70%;
         float: left;
+        text-align: right;
+        list-style: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        text-transform: uppercase;
+        padding: 17px 70px 0 0;
+        ul {
+            padding-left: 10px;
+        }
+        li {
+            display: inline-block;
+            margin: 0;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 5px 25px;
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+            a:hover {
+                color: #da491c;
+            }
+        }
+        #drpDwn-menu {
+            display: none;
+        }
+        .dropdown-menu {
+            font-weight: 400;
+            position: absolute;
+            margin: 5px 0px 0 -25px;
+            padding: 5px;
+            a {
+                display: block;
+                padding: 2px 5px;
+            }
+            a:hover {
+                background-color: #cccccc;
+                color: #000000;
+            }
+            background-color: #000000;
+            width: 140px;
+            hr {
+                margin: 0;
+                opacity: 0.7;
+            }
+        }
+    }
+    .mobile-menu {
+        display: none;
+    }
+    #overlay {
+        display: block;
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 1);
+        overflow-y: hidden;
+        transition: 0.3s;
+        .closebtn {
+            position: absolute;
+            top: 5px;
+            right: 30px;
+            font-size: 66px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
     }
 }
 
@@ -37,17 +104,42 @@ nav:after {
     clear: both;
 }
 
-@media #{$media-minimum} {
+@media #{$media-small-down} {
     nav {
-        height: 120px;
+        position: relative;
+        background-color: #000000!important;
         .logo {
-            width: 100%;
-            clear: both;
-            text-align: center;
+            width: 50%;
+            padding: 20px;
+        }
+        #menu {
+            display: none;
         }
         .menu {
-            width: 100%;
-            clear: both;
+            width: 30%;
+            .screen-block {}
+            ul {
+                position: fixed;
+                top: 30%;
+                left: 0;
+                width: 100%;
+                z-index: 999;
+                li {
+                    display: block;
+                    text-align: center;
+                }
+            }
+            .mobile-menu {
+                display: inline-block;
+                vertical-align: middle;
+                position: fixed;
+                right: 8px;
+                top: 8px;
+                border: 10px solid #000000;
+                border-radius: 500px;
+                background-color: #000000;
+                cursor: pointer;
+            }
         }
     }
 }

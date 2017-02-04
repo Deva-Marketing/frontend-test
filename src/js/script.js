@@ -15,6 +15,20 @@ $(window).bind('scroll', function () {
     }
 });
 
+/* Mobile Menu */
+
+$('#openMenu').click(function () {
+    $('#overlay').css({ "height": "100%" });
+    $('#closeMenu').css({ "display": "block" });
+    $('#menu').css({ "display": "block" });
+});
+
+$('#closeMenu').click(function () {
+    $('#overlay').css({ "height": "0%" });
+    $('#closeMenu').css({ "display": "none" });
+    $('#menu').css({ "display": "none" });
+});
+
 /* Fading the header contain for better outlook */
 $(window).scroll(function () {
     var scrollTop, height;

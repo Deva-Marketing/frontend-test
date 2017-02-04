@@ -2,12 +2,15 @@
     @include container(1308px);
     position: relative;
     width: 100%;
-    height: 482px;
+     @media #{$media-normal-up} {height: 482px;}
     background-image: url('../images/achivments-bg.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media #{$media-minimum} {
+        background-attachment: initial;
+    }
     color: #FFFFFF;
     .content {
         h3 {
@@ -20,12 +23,44 @@
         }
         padding: 110px 70px;
         max-width: 790px;
+        @media screen and (max-width: 1014px) {
+            width: 100%;
+            padding: 40px 50px;
+        }
+    }
+    .content-blocks {
+        margin-top: 30px;
+    }
+    .block {
+        display: inline-block;
+        width: 33%;
+        @media #{$media-minimum} {
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        img {
+            vertical-align: top;
+        }
+        p {
+            margin-left: 20px;
+            display: inline-block;
+            font-size: 60px;
+            line-height: 40px;
+            font-weight: 800;
+            span {
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
     }
     .person {
         position: absolute;
         top: 0;
         right: 80px;
         margin-top: -66px;
-        @media screen and (max-width: 1220px) {display:none}
+        @media screen and (max-width: 1208px) {
+            display: none
+        }
     }
 }

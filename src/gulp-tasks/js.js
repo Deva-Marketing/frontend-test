@@ -17,7 +17,7 @@ module.exports = function (gulp) {
                 .pipe(jslint())
                 .pipe(plumber.stop()),
 
-            browserified = gulp.src('js/*.js,')
+            browserified = gulp.src('js/*.js')
                 .pipe(plumber({ errorHandler: errorHandler }))
                 .pipe(browser.browserify())
                 .pipe(sourcemaps.init())

@@ -2,8 +2,16 @@
 // UTILITIES
 // +++++++++++++
 @import "normalize";
-@import "mixins";
+@import "sprites";
 @import "variables";
+
+// ++++++++++++++++++
+// MIXINS
+// ++++++++++++++++++
+@mixin container($width) {
+    max-width: $width;
+    margin: 0 auto;
+}
 
 // +++++++++++++
 // PARTS
@@ -23,7 +31,7 @@
 // ++++++++++++++++++
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 @import url('https://fonts.googleapis.com/css?family=Lato');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:700');
 
 // ++++++++++++++++++
 // GENERIC BODY STYLE
@@ -52,95 +60,7 @@ img {
   background: #da491c; 
 }
 
-// ++++++++++++++++++
-// SPRITES
-// ++++++++++++++++++
 
-.sprite-services {
-    background-image: url(../images/spritesheet-services.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-copywriting {
-    width: 37px;
-    height: 37px;
-    background-position: -5px -5px;
-}
-
-.sprite-development {
-    width: 37px;
-    height: 37px;
-    background-position: -52px -5px;
-}
-
-.sprite-photography {
-    width: 37px;
-    height: 37px;
-    background-position: -5px -52px;
-}
-
-.sprite-social {
-    width: 37px;
-    height: 37px;
-    background-position: -52px -52px;
-}
-
-.sprite-sys-arch {
-    width: 37px;
-    height: 37px;
-    background-position: -99px -5px;
-}
-
-.sprite-ui {
-    width: 37px;
-    height: 37px;
-    background-position: -99px -52px;
-}
-
-
-
-.sprite-rest {
-    background-image: url(../images/spritesheet-rest.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-
-.sprite-bugsfixed {
-    width: 40px;
-    height: 46px;
-    background-position: -5px -5px;
-}
-
-.sprite-commits {
-    width: 32px;
-    height: 42px;
-    background-position: -55px -5px;
-}
-
-.sprite-faq-closed {
-    width: 21px;
-    height: 20px;
-    background-position: -97px -5px;
-}
-
-.sprite-faq-opened {
-    width: 21px;
-    height: 21px;
-    background-position: -128px -5px;
-}
-
-.sprite-happyclients {
-    width: 50px;
-    height: 44px;
-    background-position: -97px -36px;
-}
-
-.sprite-here-map {
-    width: 133px;
-    height: 136px;
-    background-position: -159px -5px;
-}
 
 
 

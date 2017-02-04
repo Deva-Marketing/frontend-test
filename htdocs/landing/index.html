@@ -12,7 +12,30 @@
 <body>
     <nav>
         <div class="logo"><img src="images/logo.png" alt="Company Logo" width="171" height="19"></div>
-        <div class="menu"></div>
+        <div class="menu">
+            <ul id="menu">
+                <li class="fade-in"><a href="#">Home</a></li>
+                <li class="fade-in" class="dropdown" id="drpDwn"><a href="#">About</a>
+                    <div class="dropdown-menu" id="drpDwn-menu">
+                        <a href="#">Mega Moolah</a>
+                        <hr>
+                        <a href="#">The curse of the black Pearl</a>
+                        <hr>
+                        <a href="https://osvaldas.info/drop-down-navigation-responsive-and-touch-friendly">Super slots attack</a>
+                    </div>
+                </li>
+                <li class="fade-in"><a href="#">Work</a></li>
+                <li class="fade-in"><a href="#">News</a></li>
+                <li class="fade-in"><a href="#">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" id="openMenu">
+            <img src="images/mobile-menu.png" alt="Mobile Menu" width="50" height="50">
+            </div>
+            <div id="overlay">
+                 <span class="closebtn" id="closeMenu">&times;</span>
+            </div>
+
+        </div>
     </nav>
     <header>
         <div class="header-container">
@@ -143,6 +166,26 @@
         <div class="content">
             <h3>Solving Problems and Keeping Clients Happy</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <div class="content-blocks">
+                <div class="block">
+                    <img src="images/sprites-rest/commits.png">
+                    <p>886
+                        <br/>
+                        <span>Commits</span></p>
+                </div>
+                <div class="block">
+                    <img src="images/sprites-rest/happyclients.png">
+                    <p>68+
+                        <br/>
+                        <span>Happy Clients</span></p>
+                </div>
+                <div class="block">
+                    <img src="images/sprites-rest/bugsfixed.png">
+                    <p>335
+                        <br/>
+                        <span>Bugs Fixed</span></p>
+                </div>
+            </div>
         </div>
         <div class="person">
             <img src="images/person-achivments.png" alt="person" width="431" height="548">
