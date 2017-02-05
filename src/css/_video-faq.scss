@@ -2,7 +2,7 @@
     @include container(1308px);
     position: relative;
     clear: both;
-    ::selection{
+    ::selection {
         background-color: #c0c0c0;
     }
     .video {
@@ -34,15 +34,23 @@
             font-weight: 600;
             margin-bottom: 20px;
         }
-        .question {
-            font-size: 1.6em;
-            color: #da491c;
-            display: inline-block;
-            margin-left: 5px;
-           
+        li {
+            list-style-type:none;
+            font-weight: 200;
         }
-        .ver-align{
-            padding: 50px 0;
+        li.q {
+            border-bottom: 1px #ddd solid;
+            cursor: pointer;
+            color: #333333;
+            padding: 10px 0;
+            font-size: 1.6em;
+            img{margin-right:5px;}
+        }
+        li.a {
+            display: none;
+            color: #333333;
+            font-size: 1.4em;
+            padding: 10px 0;
         }
         hr {
             width: 100%;
@@ -52,15 +60,12 @@
             border: 0;
             border-top: 2px solid #cfcfcf;
         }
-        .answer {
-            font-size: 1.4em;
-            color: #666666;
-            display: none;
-        }
-        img{
-            vertical-align:middle;
+        img {
+            vertical-align: middle;
             margin-top: -5px;
-            @media screen and (max-width: 1220px) {display:none;}
+            @media screen and (min-width: 1025px) and (max-width: 1220px) {
+                display: none;
+            }
         }
     }
 }
@@ -77,4 +82,3 @@
         }
     }
 }
-

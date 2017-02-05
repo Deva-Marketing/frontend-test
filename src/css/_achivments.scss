@@ -59,7 +59,12 @@
         top: 0;
         right: 80px;
         margin-top: -66px;
-        @media screen and (max-width: 1208px) {
+        @media screen and (min-width: 800px) and (max-width: 1208px) {
+            right: 0px;
+            margin-top: 0px;
+
+        }
+        @media screen and (max-width: 1067px) {
             display: none
         }
     }

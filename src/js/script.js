@@ -15,8 +15,12 @@ $(window).bind('scroll', function () {
     }
 });
 
-/* Mobile Menu */
+/* Dropdown menu on click */
+$("#drpDwn").click(function () {
+    $('#drpDwn-menu').slideToggle("fast");
+});
 
+/* Mobile Menu */
 $('#openMenu').click(function () {
     $('#overlay').css({ "height": "100%" });
     $('#closeMenu').css({ "display": "block" });
@@ -36,6 +40,16 @@ $(window).scroll(function () {
     height = 400;
     $('.header-container').css({'opacity': ((height - scrollTop) / height)});
 });
+
+/* FAQ */
+
+// Question handler
+$('li.q').on('click', function () {
+    $(this).next().slideToggle(200)
+        .siblings('li.a').slideUp();
+    $(this).find('img').toggle();
+});
+
 
 /* Testamonail Carousel */
 $(function () {
