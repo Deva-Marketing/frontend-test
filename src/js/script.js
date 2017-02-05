@@ -42,12 +42,12 @@ $(window).scroll(function () {
 });
 
 /* FAQ */
-
-// Question handler
 $('li.q').on('click', function () {
     $(this).next().slideToggle(200)
         .siblings('li.a').slideUp();
-    $(this).find('img').toggle();
+    var checked = $(this).children('.unchecked');
+    $('.unchecked').not(checked).removeClass('checked');
+    checked.toggleClass('checked');
 });
 
 

@@ -35,7 +35,7 @@
             margin-bottom: 20px;
         }
         li {
-            list-style-type:none;
+            list-style-type: none;
             font-weight: 200;
         }
         li.q {
@@ -44,13 +44,30 @@
             color: #333333;
             padding: 10px 0;
             font-size: 1.6em;
-            img{margin-right:5px;}
+            img {
+                margin-right: 5px;
+            }
         }
         li.a {
             display: none;
             color: #333333;
             font-size: 1.4em;
             padding: 10px 0;
+        }
+        .unchecked {
+            background-image: url('../images/sprites-rest/faq-closed.png');
+            background-repeat: no-repeat;
+            width: 21px;
+            height: 21px;
+            margin-bottom: -5px;
+            display: inline-block;
+            margin-right: 5px;
+            @media screen and (min-width: 1025px) and (max-width: 1220px) {
+                display: none;
+            }
+        }
+        .checked {
+            background-image: url('../images/sprites-rest/faq-opened.png');
         }
         hr {
             width: 100%;
@@ -59,13 +76,6 @@
             height: 1px;
             border: 0;
             border-top: 2px solid #cfcfcf;
-        }
-        img {
-            vertical-align: middle;
-            margin-top: -5px;
-            @media screen and (min-width: 1025px) and (max-width: 1220px) {
-                display: none;
-            }
         }
     }
 }

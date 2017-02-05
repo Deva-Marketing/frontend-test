@@ -1,6 +1,7 @@
 // +++++++++++++
 // UTILITIES
 // +++++++++++++
+
 @import "normalize";
 @import "sprites";
 @import "variables";
@@ -8,6 +9,7 @@
 // ++++++++++++++++++
 // MIXINS
 // ++++++++++++++++++
+
 @mixin container($width) {
     max-width: $width;
     margin: 0 auto;
@@ -16,6 +18,7 @@
 // +++++++++++++
 // PARTS
 // +++++++++++++
+
 @import "header";
 @import "nav";
 @import "section-services";
@@ -26,9 +29,11 @@
 @import "testimonials";
 @import "achivments";
 @import "googlemaps";
+@import "contactus";
 // ++++++++++++++++++
 // IMPORTED GOOGLE FONTS
 // ++++++++++++++++++
+
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Raleway:700');
