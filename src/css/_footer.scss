@@ -78,6 +78,9 @@ footer {
         }
         .social-icons {
             padding-top: 10px;
+            a{
+                text-decoration: none;
+            }
             a:hover {
                 opacity: 0.7;
             }
@@ -102,21 +105,22 @@ footer {
         input[type=text] {
             font-size: 2.5em;
         }
-    }
-    .social-footer {
-        position: absolute;
-        right: -40px;
-        .social-icons {
-            padding-top: 0!important;
-            img {
-                display: block;
+        .social-footer {
+            position: absolute;
+            right: 20px;
+            width: 40px;
+            .social-icons {
+                padding-top: 0!important;
+                img {
+                    display: block;
+                }
             }
-        }
-        h4 {
-            display: none;
-        }
-        p {
-            display: none;
+            h4 {
+                display: none;
+            }
+            p {
+                display: none;
+            }
         }
     }
 }
