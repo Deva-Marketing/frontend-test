@@ -14,8 +14,8 @@
         <div class="logo"><img src="images/logo.png" alt="Company Logo" width="171" height="19"></div>
         <div class="menu">
             <ul id="menu">
-                <li class="fade-in"><a href="#">Home</a></li>
-                <li class="fade-in" class="dropdown" id="drpDwn"><a href="#">About</a>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown" id="drpDwn"><a href="#">About</a>
                     <div class="dropdown-menu" id="drpDwn-menu">
                         <a href="#">Lorem ipsum</a>
                         <a href="#">What we do</a>
@@ -197,21 +197,43 @@
         <div class="contact-info">
             <div class="verticle-line"></div>
             <h3>Contact Us</h3>
-            <p>Quis autem vel eum molestiae consequatur, eum fugiat quo voluptas nulla pariatur?</p>
-            <p>HEADQUARTERS
+            <p class="text">Quis autem vel eum molestiae consequatur, eum fugiat quo voluptas nulla pariatur?</p>
+            <p class="address"><span>HEADQUARTERS</span>
                 <br/> 123 W. Mission Blvd.
                 <br/> Suite 101-191
-                <br/> Pomona, Ca. 91766
-                <br/> GET IN TOUCH
+                <br/> Pomona, Ca. 91766</p>
+            <p class="in-touch">
+                <span>Get In Touch</span>
+                <br/> 213-123-4567
+                <br/> userID
+                <br/> email@domain.com
+            </p>
         </div>
         <div class="contact-form">
-            <form name="contactForm" action="">
-                <label for="Full name">Full Name</label>
-                <input type="text" id="fullName" name="Full Name">
-                <label for="lname">Email</label>
-                <input type="text" id="EMail" name="Email">
-                <label for="country">State</label>
-                <input class="button" type="submit" value="Submit">
+            <form action="">
+                <div class="field">
+                    <label for="Full name">Full Name</label>
+                    <input type="text" id="fullName" name="Full Name">
+                </div>
+                <div class="field">
+                    <label for="lname">Email</label>
+                    <input type="text" id="EMail" name="Email">
+                </div>
+                <div class="field">
+                    <label for="Full name">What’s your budget?</label>
+                    <input type="text" id="fullName" name="Full Name">
+                </div>
+                <div class="field">
+                    <label for="lname">Services you’re inquiring about</label>
+                    <input type="text" id="EMail" name="Email">
+                </div>
+                <div class="textarea-field">
+                    <label for="lname">Services you’re inquiring about</label>
+                    <textarea></textarea>
+                </div>
+             
+                <input class="button" type="submit" value="send message">
+              
             </form>
         </div>
     </div>
@@ -228,10 +250,30 @@
                 </ul>
             </div>
             <form action="subcribe.php">
-                <input type="text" name="FirstName" value="Email Address">
+                <input type="text" name="FirstName" placeholder="Email Address">
                 <p class="subscribe-press">Subscribe duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
             </form>
-            <div class="copyright">Copyright 2017 | All Right Reserved</div> 
+            <div class="copyright">Copyright 2017 | All Right Reserved</div>
+        </div>
+        <div class="social-footer">
+            <h4>Front-end Test</h4>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <div class="social-icons">
+                <a href="">
+                    <img src="images/social/google.svg" width="26" height="26" alt="Google">
+                </a>&nbsp;
+                <a href="">
+                    <img src="images/social/twitter.svg" width="26" height="26" alt="Twitter">
+                </a>&nbsp;
+                <a href="">
+                    <img src="images/social/facebook.svg" width="26" height="26" alt="Facebook">
+                </a>&nbsp;
+                <a href="">
+                    <img src="images/social/dribbble.svg" width="26" height="26" alt="Google">
+                </a>&nbsp;
+                <a href="">
+                    <img src="images/social/pinterest.svg" width="26" height="26" alt="Twitter"></a>&nbsp;
+            </div>
         </div>
     </footer>
     <script src="js/script.js "></script>

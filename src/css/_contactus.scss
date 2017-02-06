@@ -1,33 +1,123 @@
 .contact {
     @include container(1308px);
     width: 100%;
-    height: 400px;
+    height: 570px;
     clear: both;
-    .contact-info{
-    	width: 36%;
-    	display: inline-block;
-    	float: left;
+    padding: 60px;
+    background-color: #efefef;
+    .contact-info {
+        width: 36%;
+        display: inline-block;
+        float: left;
+        h3 {
+            font-size: 3.6em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p.text {
+            clear: both;
+            font-size: 1.6em;
+            color: #333333;
+            margin: 20px 0;
+            line-height: 1.8em;
+            padding-right: 40px;
+            font-family: 'Merriweather', serif;
+        }
+        p.address {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.4em;
+            color: #333333;
+            line-height: 1.6em;
+            span {
+                line-height: 2.2em;
+                font-weight: 600;
+                color: #000000;
+            }
+        }
+        p.in-touch {
+            margin-top: 10px;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.4em;
+            color: #333333;
+            line-height: 1.6em;
+            span {
+                line-height: 2.2em;
+                font-weight: 600;
+                color: #000000;
+                text-transform: uppercase;
+            }
+        }
     }
-    .contact-form{
-    	width: 64%;
-    	display: inline-block;
-    	float: left;
+    .contact-form {
+        width: 64%;
+        display: inline-block;
+        float: left;
+        label {
+            font-size: 1.4em;
+            color: #333333;
+        }
+        input[type=text] {
+            width: 100%;
+            height: 45px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 145px;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            resize: none;
+        }
+        .field {
+            width: 49%;
+            display: inline-block;
+            padding: 0 20px 20px 0;
+        }
+        .textarea-field {
+            padding: 0 20px 20px 0;
+            width: 98.5%;
+        }
     }
-
     .verticle-line {
-        border-left: 2px solid $primary-color;
+        border-left: 2px solid #7b7b7b;
         height: 46px;
         display: inline-block;
         float: left;
         margin-right: 20px;
     }
-    input[type=text]{
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+}
+
+@media #{$media-small-down} {
+    .contact {
+        height: 1140px;
+        .contact-info {
+            width: 100%;
+            clear: both;
+            p.text{
+                padding-right: 0;
+            }
+        }
+        .contact-form {
+            margin-top: 40px;
+            width: 100%;
+            clear: both;
+            .field {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media #{$media-minimum} {
+    .contact {
+        height: 1160px;
     }
 }
